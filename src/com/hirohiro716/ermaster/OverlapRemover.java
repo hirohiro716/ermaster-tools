@@ -20,7 +20,7 @@ import javafx.stage.Stage;
  * ERMasterで不意に発生している重複行を削除するプログラム.
  * @author hiro
  */
-public class OverlapEraser extends Application {
+public class OverlapRemover extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -46,7 +46,7 @@ public class OverlapEraser extends Application {
     private EventHandler<ActionEvent> buttonAction = new EventHandler<ActionEvent>() {
         @Override
         public void handle(ActionEvent event) {
-            OverlapEraser run = OverlapEraser.this;
+            OverlapRemover run = OverlapRemover.this;
             String original = run.textArea.getText();
             // 改行コード特定
             String lineSeparater = null;
