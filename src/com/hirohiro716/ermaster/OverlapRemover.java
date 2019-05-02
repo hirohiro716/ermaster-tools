@@ -3,7 +3,7 @@ package com.hirohiro716.ermaster;
 import java.util.ArrayList;
 
 import com.hirohiro716.javafx.LayoutHelper;
-import com.hirohiro716.javafx.control.ImeOffButton;
+import com.hirohiro716.javafx.control.IMEOffButton;
 import com.hirohiro716.javafx.dialog.alert.InstantAlert;
 
 import javafx.application.Application;
@@ -28,7 +28,7 @@ public class OverlapRemover extends Application {
         this.textArea = new TextArea();
         LayoutHelper.setAnchor(this.textArea, 5, 5, 35, 5);
         this.anchorPane.getChildren().add(this.textArea);
-        Button button = new ImeOffButton("重複削除");
+        Button button = new IMEOffButton("重複削除");
         button.setOnAction(this.buttonAction);
         this.anchorPane.getChildren().add(button);
         LayoutHelper.setAnchor(button, null, 5d, 5d, null);
